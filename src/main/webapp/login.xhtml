@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+        <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0"></web-app>
+    <h:head>
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> </meta>
+        <!-- Title Page -->  
+        <title>Login</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css"></link>
+        <link rel="stylesheet" href="css/animate.css"></link>
+        <link rel="stylesheet" href="css/styles.css"></link> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="css/counter.css"></link>
+        <link rel="stylesheet" href="css/owl.carousel.css"></link>
+        <link  rel="stylesheet" href="css/owl.theme.default.min.css"></link>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <link rel="stylesheet" href="css/style.css"></link>
+        <link href="css/style_login.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+   <h:body>
+        <div class="container-fluid" style="background-color: #3A94D7;">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <a class="navbar-brand" href="#">Super Mercado</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.xhtml">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Menu
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="productos.xhtml">Producto</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="pagos.xhtml">Pagos</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="carrito.xhtml">Carrito de compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar"></input>
+                            <a class="btn btn-outline-warning my-2 my-sm-0" href="productos.xhtml">Buscar</a>
+                           
+                            
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Acceder
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="registro.xhtml">Registrarse</a>
+                                        <a class="dropdown-item" href="login.xhtml">Iniciar sesión</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+<br></br><br></br>
+        <center><h1>Bienvenido a Inicio de Sesión</h1></center>
+        <div class="container well"  id="containerLogin">
+
+            <div class="container-fluid" id="cont_img_login">
+                <br></br>
+                <center><img src="img/login.png" alt="" class="img-fluid"/></center>  
+            </div>
+
+
+            <form id="form_login">
+                
+                
+                 <h:outputLabel value="Ingresa tu usuario"/>
+                    <div class="col-sm-15">
+                        <p:inputText class="form-control" placeholder="maffer.dom@gmail.com" required="true"></p:inputText>                         
+                    </div>
+                          <br></br>
+                          
+                           <h:outputLabel value="Ingresa tu contraseña"></h:outputLabel>
+                    <div class="col-sm-15">
+                        <h:inputSecret class="form-control" ></h:inputSecret>                         
+                    </div>
+                           <br></br>
+                
+                
+                
+                <div align="center">
+                    <h:commandButton value="Iniciar Sesión" type="submit" class="btn btn-warning"></h:commandButton> 
+                   &nbsp;
+                   <a href="index.xhtml" class="btn btn-danger" id="boton_cancelar">Cancelar</a>
+                   <br></br>
+                   <br></br>
+                </div>
+              
+              
+            </form>
+        </div>
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+        <script src="js/counter.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script>
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        </script>
+    </h:body>
+    <footer>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        
+    </footer>
+</html>
+
