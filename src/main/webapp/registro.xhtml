@@ -87,76 +87,66 @@ version="3.0"></web-app>
 
             </div>
 
-              <h:form class="form-horizontal">
+                          <form class="form-horizontal">
                 <div class="form-group">
-                    <h:outputLabel value="Nombre Completo"></h:outputLabel>
+                    <label for="InputName" class="col-md-2 control-label">Nombre</label>
                     <div class="col-sm-15">
-                        <p:inputText class="form-control" placeholder="Fernanda Domínguez Reyes"></p:inputText>                         
+                        <input type="text" class="form-control" id="InputName" placeholder="Juan Garza González" minlength="1" maxlength="30" title="Solo se aceptan letras y es obligatorio este campo" required="true" pattern="[a-zA-Z]" ></input>
                     </div>
-                     <br></br>
-                    
-                    <h:outputLabel value="RFC"></h:outputLabel>
+
+                    <label for="InputAp" class="col-md-2 control-label">RFC</label>
                     <div class="col-sm-15">
-                        <p:inputText class="form-control" placeholder="123456765"></p:inputText>                         
+                        <input type="text" class="form-control" id="InputAp" placeholder="MELM8305201H8" title="Es obligatorio este campo" required="true" maxlength="13" minlength="10" pattern="[A-Za-z0-9]"></input>
                     </div>
-                    
-                    <br></br>
-                     <h:outputLabel value="Estado"></h:outputLabel>
+
+                    <label for="InputAm" class="col-md-2 control-label">Estado</label>
                     <div class="col-sm-15">
-                        <p:inputText class="form-control" placeholder="México"></p:inputText>                         
+                        <input type="text" class="form-control" id="InputName" placeholder="México" required="true" minlength="1" maxlength="30" pattern="[a-zA-Z]" title="Solo se aceptan letras y es obligatorio este campo"></input>
                     </div>
-                     <br></br>
-                     
-                      <h:outputLabel value="Municipio"></h:outputLabel>
+                     <label for="InputAm" class="col-md-2 control-label">Municipio</label>
                     <div class="col-sm-15">
-                        <p:inputText class="form-control" placeholder="Toluca"></p:inputText>                         
+                        <input type="text" class="form-control" id="InputName" placeholder="Toluca" required="true" minlength="1" maxlength="30" pattern="[a-zA-Z]" title="Solo se aceptan letras y es obligatorio este campo"></input>
                     </div>
-                      <br></br>
-                      
-                       <h:outputLabel value="Calle"></h:outputLabel>
+                    <label for="InputAm" class="col-md-2 control-label">Calle</label>
                     <div class="col-sm-15">
-                        <p:inputText class="form-control" placeholder="Privada de Pino Suárez"></p:inputText>                         
+                        <input type="text" class="form-control" id="InputName" placeholder="Anillo perimetral" required="true" minlength="1" maxlength="30" pattern="[A-Za-z0-9]" title="Se aceptan letras, números y es obligatorio este campo"></input>
                     </div>
-                       <br></br>
-                       
-                        <h:outputLabel value="Número"></h:outputLabel>
+                     <label for="InputAm" class="col-md-2 control-label">Numero</label>
                     <div class="col-sm-15">
-                        <p:inputText class="form-control" placeholder="106" type="number"></p:inputText>                         
+                        <input type="number" class="form-control" id="InputName" placeholder="106" required="true" minlength="1" maxlength="5" pattern="[0-9]" title="Solo se aceptan números y es obligatorio este campo" ></input>
                     </div>
-                        <br></br>
-                        
-                         <h:outputLabel value="CP"></h:outputLabel>
+
+                      <label for="InputAm" class="col-md-2 control-label">CP</label>
                     <div class="col-sm-15">
-                        <p:inputText class="form-control" placeholder="50090" type="number"></p:inputText>                         
+                        <input type="number" class="form-control" id="InputName" placeholder="50010" required="true" minlength="5" maxlength="5" pattern="[0-9]" title="Solo se aceptan números y es obligatorio este campo"></input>
                     </div>
-                         <br></br>
-                         
-                          <h:outputLabel value="Correo"></h:outputLabel>
+
+
+
+                    <label for="InputEmail" class="col-sm-2 control-label">Correo</label>
                     <div class="col-sm-15">
-                        <p:inputText class="form-control" placeholder="maffer.dom@gmail.com"></p:inputText>                         
+                        <input type="email" class="form-control" id="InputEmail" placeholder="juang@hotmail.com" required="true" minlength="15" maxlength="30" pattern="[a-zA-Z0-9]" title="Es obligatorio este campo"> </input>
                     </div>
-                          <br></br>
-                          
-                           <h:outputLabel value="Contraseña"></h:outputLabel>
+                </div>
+                <div class="form-group">
+                    <label for="InputPassword" class="col-sm-2 control-label">Contraseña</label>
                     <div class="col-sm-15">
-                        <h:inputSecret class="form-control" ></h:inputSecret>                         
+                        <input type="password" class="form-control" id="InputPassword" placeholder="**********" required="true" minlength="1" maxlength="20" pattern="[A-Za-z0-9]" title="Es obligatorio este campo"> </input>
                     </div>
-                           <br></br>
+
+                           
+
 
                 </div>
                 <center>
                     <div>
-                <h:form class="form-inline">  
-                                    
-                   <h:commandButton value="Registrarse" type="submit" class="btn btn-warning"></h:commandButton> 
-                   &nbsp;
-                   <a href="index.xhtml" class="btn btn-danger" id="boton_cancelar">Cancelar</a>
-                   <br></br>
-                   <br></br>
-                </h:form>
+                <form class="form-inline" allign="center">  
+                   <a href="index.html" class="btn btn-warning" id="boton_cancelar">Registrar</a>
+                   <a href="index.html" class="btn btn-danger" id="boton_cancelar">Cancelar</a>
+                </form>
                         </div>
                     </center>
-            </h:form>
+            </form>
                 
         </div>
 
